@@ -46,6 +46,33 @@ const categoryList = [
     },
 ];
 
+const courseList = [
+    {
+        tutorName: "John Doe",
+        courseName: "Course 1",
+        duration: "1h 30m",
+        rating: 4.5,
+    },
+    {
+        tutorName: "John Doe",
+        courseName: "Course 1",
+        duration: "1h 30m",
+        rating: 4.5,
+    },
+    {
+        tutorName: "John Doe",
+        courseName: "Course 1",
+        duration: "1h 30m",
+        rating: 4.5,
+    },
+    {
+        tutorName: "John Doe",
+        courseName: "Course 1",
+        duration: "1h 30m",
+        rating: 4.5,
+    },
+];
+
 const Welcome = () => {
     return (
         <>
