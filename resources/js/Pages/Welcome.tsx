@@ -7,6 +7,10 @@ import Mindfulness from "../../images/CategoryItem/mindfulness.png";
 import Virtualization from "../../images/CategoryItem/virtualization.png";
 import CategoryItem from "@/Components/Category/CategoryItem";
 import CategoryList from "@/Components/Category/CategoryList";
+import LearningList from "@/Components/Learning/LearningList";
+
+import SampleImage1 from "../../images/Sample/1.png";
+import SampleImage2 from "../../images/Sample/2.png";
 
 const categoryList = [
     {
@@ -73,10 +77,41 @@ const courseList = [
     },
 ];
 
+const learningList = [
+    {
+        courseTitle: "Course 1",
+        tutorName: "John Doe",
+        completion: 50,
+        isBookmarked: true,
+        thumbnail: SampleImage1,
+    },
+    {
+        courseTitle: "Course 2",
+        tutorName: "John Doe",
+        completion: 30,
+        isBookmarked: false,
+        thumbnail: SampleImage2,
+    },
+    {
+        courseTitle: "Course 3",
+        tutorName: "John Doe",
+        completion: 0,
+        isBookmarked: true,
+        thumbnail: SampleImage2,
+    },
+    {
+        courseTitle: "Course 4",
+        tutorName: "John Doe",
+        completion: 10,
+        isBookmarked: false,
+        thumbnail: SampleImage1,
+    },
+];
+
 const Welcome = () => {
     return (
         <>
-            <CategoryList categoryList={categoryList} />
+            <LearningList learningList={learningList} />
         </>
     );
 };
