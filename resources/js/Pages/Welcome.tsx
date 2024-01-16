@@ -19,6 +19,8 @@ import SampleImage7 from "../../images/Sample/7.png";
 import SampleImage8 from "../../images/Sample/8.png";
 import CourseList from "@/Components/Course/CourseList";
 
+import "../../style/Pages/Welcome.scss";
+
 const categoryList = [
     {
         label: "Guided Mediation",
@@ -129,9 +131,20 @@ const learningList = [
 
 const Welcome = () => {
     return (
-        <>
-            <CourseList courseList={courseList} />
-        </>
+        <div id="welcome-page">
+            <div className="sec-container">
+                <h1 className="sec-title">Featured Courses</h1>
+                <CourseList courseList={courseList} />
+            </div>
+            <div className="sec-container">
+                <h1 className="sec-title">Categories</h1>
+                <CategoryList categoryList={categoryList} />
+            </div>
+            <div className="sec-container">
+                <h1 className="sec-title">My Learning</h1>
+                <LearningList learningList={learningList} />
+            </div>
+        </div>
     );
 };
 

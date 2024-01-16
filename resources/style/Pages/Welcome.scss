@@ -1,0 +1,15 @@
+#welcome-page {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .sec-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sec-title {
+        font-size: 32px;
+    }
+}
