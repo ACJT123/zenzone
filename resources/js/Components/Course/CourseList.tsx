@@ -1,23 +1,29 @@
 
-import "../../../style/Components/Category/categoryList.scss";
+import "../../../style/Components/Course/courseList.scss";
 import CourseListItem from "./CourseListItem";
+
 
 type ICourseList = {
     courseList: any[];
 };
 
-const CategoryList = ({courseList}: ICourseList) => {
+const CourseList = ({courseList}: ICourseList) => {
     return (
         <div className="course-list-container">
             {courseList.map((course) => (
                 <CourseListItem
-                    icon={category.icon}
-                    label={category.label}
-                    route={category.route}
+                    thumbnail={course.thumbnail}
+                    courseTitle={course.courseName}
+                    tutorName={course.tutorName}
+                    tutorProfilePicture={course.tutorProfilePicture}
+                    isBookmarked={course.isBookmarked}
+                    duration={course.duration}
+                    rating={course.rating}
+                    route={course.route}
                 />
             ))}
         </div>
     );
 };
 
-export default CategoryList;
+export default CourseList;

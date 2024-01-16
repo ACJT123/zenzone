@@ -11,6 +11,13 @@ import LearningList from "@/Components/Learning/LearningList";
 
 import SampleImage1 from "../../images/Sample/1.png";
 import SampleImage2 from "../../images/Sample/2.png";
+import SampleImage3 from "../../images/Sample/3.png";
+import SampleImage4 from "../../images/Sample/4.png";
+import SampleImage5 from "../../images/Sample/5.png";
+import SampleImage6 from "../../images/Sample/6.png";
+import SampleImage7 from "../../images/Sample/7.png";
+import SampleImage8 from "../../images/Sample/8.png";
+import CourseList from "@/Components/Course/CourseList";
 
 const categoryList = [
     {
@@ -56,24 +63,36 @@ const courseList = [
         courseName: "Course 1",
         duration: "1h 30m",
         rating: 4.5,
+        thumbnail: SampleImage3,
+        tutorProfilePicture: SampleImage7,
+        isBookmarked: false,
     },
     {
         tutorName: "John Doe",
         courseName: "Course 1",
         duration: "1h 30m",
         rating: 4.5,
+        thumbnail: SampleImage4,
+        tutorProfilePicture: SampleImage8,
+        isBookmarked: true,
     },
     {
         tutorName: "John Doe",
         courseName: "Course 1",
         duration: "1h 30m",
         rating: 4.5,
+        thumbnail: SampleImage5,
+        tutorProfilePicture: SampleImage7,
+        isBookmarked: false,
     },
     {
         tutorName: "John Doe",
         courseName: "Course 1",
         duration: "1h 30m",
         rating: 4.5,
+        thumbnail: SampleImage6,
+        tutorProfilePicture: SampleImage8,
+        isBookmarked: true,
     },
 ];
 
@@ -111,7 +130,7 @@ const learningList = [
 const Welcome = () => {
     return (
         <>
-            <LearningList learningList={learningList} />
+            <CourseList courseList={courseList} />
         </>
     );
 };
