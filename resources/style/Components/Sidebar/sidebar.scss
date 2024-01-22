@@ -1,0 +1,23 @@
+.icon {
+    width: 15px;
+    height: 15px;
+}
+
+.ant-layout-sider-children {
+    background-color: #f0f0f0;
+}
+
+.ant-layout-sider-trigger {
+    background-color: #f0f0f0 !important;
+}
+
+.anticon {
+    &.anticon-right,
+    &.anticon-left {
+        color: black;
+    }
+}
+
+.avatar{
+    border-radius: 100%;
+}
