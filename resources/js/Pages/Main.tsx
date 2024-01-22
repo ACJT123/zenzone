@@ -15,6 +15,7 @@ import HomeIcon from "../../images/Sidebar/home.png";
 import UserAvatar from "../../images/Sample/9.png";
 
 import "../../style/Components/Sidebar/sidebar.scss";
+import Profile from "./Profile";
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -127,6 +128,7 @@ const Main = () => {
                         }}
                     >
                         {selectedKey === "home" && <Welcome />}
+                        {selectedKey === "avatar" && <Profile />}
                     </div>
                 </Content>
                 {/* <Footer style={{ textAlign: "center" }}>

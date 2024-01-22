@@ -1,0 +1,67 @@
+$themeColor: #f0f0f0;
+
+.user-main-profile-container {
+    display: flex;
+
+    .user-avatar {
+        border-radius: 100%;
+        width: 15%;
+        height: 15%;
+    }
+
+    .username {
+        font-size: 32px;
+    }
+}
+
+.personal-achievements-board {
+    &.inner {
+        display: flex;
+        gap: 10px;
+        align-items: stretch;
+        justify-content: center;
+    }
+}
+
+.achievements-container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.achievement-icon-outer {
+    background-color: $themeColor;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px; /* Set a fixed width */
+}
+
+.achievement-label,
+.favorite-zens-categories-tag {
+    font-size: 14px;
+}
+
+.achievement-label {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.achievement-value {
+    font-size: 20px;
+}
+
+.achievement-icon-outer,
+.achievement-label,
+.achievement-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievement-icon {
+    width: 30px;
+}
