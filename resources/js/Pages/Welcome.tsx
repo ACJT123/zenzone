@@ -21,6 +21,10 @@ import CourseList from "@/Components/Course/CourseList";
 
 import "../../style/Pages/Welcome.scss";
 
+import { Menu, Layout } from "antd";
+
+const { Header, Sider, Content } = Layout;
+
 const categoryList = [
     {
         label: "Guided Mediation",
