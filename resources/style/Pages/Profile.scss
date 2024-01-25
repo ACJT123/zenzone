@@ -2,6 +2,7 @@ $themeColor: #f0f0f0;
 
 .user-main-profile-container {
     display: flex;
+    gap: 40px;
 
     .user-avatar {
         border-radius: 100%;
@@ -36,7 +37,7 @@ $themeColor: #f0f0f0;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 130px; /* Set a fixed width */
+    width: 130px;
 }
 
 .achievement-label,
