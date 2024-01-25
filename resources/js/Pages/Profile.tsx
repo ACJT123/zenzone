@@ -68,6 +68,9 @@ const Profile = () => {
                     </div>
                 </div>
             </div>
+            <div className="milestone-achievements-container">
+                
+            </div>
         </div>
     );
 };
