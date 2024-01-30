@@ -4,6 +4,7 @@ import CourseCompletedIcon from "../../images/Common/completed.png";
 import HoursDedicatedIcon from "../../images/Common/hours-dedicated.png";
 
 import "../../style/Pages/Profile.scss";
+import MilestoneAchievementListItem from "@/Components/MilestoneAchievements/MilestoneAchievementListItem";
 
 const personalAchievements = [
     {
@@ -31,6 +32,25 @@ const userAchievements = {
     "hours dedicated": 10,
     "skills mastered": 10,
 };
+
+const milestoneAchievements = [
+    {
+        icon: CourseCompletedIcon,
+        label: "Courses Completed",
+        requirement: "Maintain a 3-day meditation streak",
+    },
+    {
+        icon: HoursDedicatedIcon,
+        label: "Hours Dedicated",
+        requirement: "Maintain a 3-day meditation streak",
+    },
+    {
+        icon: SkillMasteredIcon,
+        label: "Skills Mastered",
+        requirement: "Maintain a 3-day meditation streak",
+    },
+];
+
 const Profile = () => {
     return (
         <div id="profileScreen">
@@ -69,7 +89,16 @@ const Profile = () => {
                 </div>
             </div>
             <div className="milestone-achievements-container">
-                
+                {
+                    milestoneAchievements.map((item) => (
+                        <MilestoneAchievementListItem
+                            icon={item.icon}
+                            alt={item.label}
+                            label={item.label}
+                            requirement={item.requirement}
+                        />
+                    ))
+                }
             </div>
         </div>
     );

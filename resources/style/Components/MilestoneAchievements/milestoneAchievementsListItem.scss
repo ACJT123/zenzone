@@ -1,0 +1,34 @@
+$themeColor: #f0f0f0;
+
+#milestone-achievement-item-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+
+    .icon-outer{
+        display: flex;
+        align-items: center;
+        background-color: $themeColor;
+        padding: 30px 50px;
+        border-radius: 20px;
+    }
+
+    .icon{
+        min-width: 30px;
+        min-height: 30px;
+    }
+
+
+    .label{
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .progress{  
+        font-size: 15px;
+    }
+}
