@@ -88,6 +88,7 @@ const Profile = () => {
                     </div>
                 </div>
             </div>
+            <div className="label my-5">Milestone Achievements</div>
             <div className="milestone-achievements-container">
                 {
                     milestoneAchievements.map((item) => (
